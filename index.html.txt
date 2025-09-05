@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoenBotHive — Chatbot Demo</title>
+  <meta name="description" content="MoenBotHive chatbot demo page." />
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#f59e0b; }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+      background: linear-gradient(160deg, var(--bg), #0b1026 60%);
+      color:var(--text);
+      min-height:100vh; display:flex; align-items:center; justify-content:center; padding:32px;
+    }
+    .card{
+      width:100%; max-width:900px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.08); border-radius:20px; padding:28px; box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      backdrop-filter: blur(6px);
+    }
+    h1{ margin:0 0 10px; font-size: 28px; letter-spacing: 0.4px; }
+    p{ color:var(--muted); line-height:1.6; }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px; background:rgba(245, 158, 11, 0.15); border:1px solid rgba(245,158,11,0.35);
+      color:#fde68a; padding:6px 10px; border-radius:999px; font-size:12px; letter-spacing:.3px; margin-bottom:14px;
+    }
+    .grid{ display:grid; grid-template-columns: 1fr; gap:16px; margin-top:18px; }
+    .tile{
+      border:1px dashed rgba(255,255,255,0.15); padding:16px; border-radius:14px; background:rgba(255,255,255,0.02);
+    }
+    code, pre{ background:#0b122b; border:1px solid rgba(255,255,255,0.08); padding:14px; border-radius:10px; display:block; color:#c7d2fe; overflow:auto; }
+    .footer{ margin-top:22px; font-size:13px; color:#94a3b8; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+    a{ color:#93c5fd; text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+  </style>
+
+  <!-- 🔽🔽🔽 PASTE YOUR BOTSIFY SCRIPT BELOW THIS LINE 🔽🔽🔽 -->
+  <script>
+  !function() {
+    var t;
+    if (t = window.webbot = window.webbot || [], !t.init) {
+      if (t.invoked) {
+        window.console && console.error && console.error("Webbot snippet included twice.");
+      } else {
+        t.load = function(e) {
+          var o, n;
+          o = document.createElement("script");
+          o.type = "text/javascript";
+          o.async = true;
+          o.crossOrigin = "anonymous";
+          o.src = "https://app.botsify.com/web-bot/script/frame/" + e + "/webbot.js";
+          n = document.getElementsByTagName("script")[];
+          n.parentNode.insertBefore(o, n);
+        };
+      }
+    }
+  }();
+  webbot.load('rUPCngMqsSMpsfiJzI9ltTtplTuyQbmYVkULexQI');
+</script>
+  <script type="text/javascript">
+    (function(b,o,t,s,i,f,y){b[i]=b[i]||function(){(b[i].q=b[i].q||[]).push(arguments)};
+    y=o.createElement(t),f=o.getElementsByTagName(t)[0];y.async=1;y.src=s;f.parentNode.insertBefore(y,f)})
+    (window,document,'script','https://widget.botsify.com/your-bot.js','botsifyWidget');
+
+    botsifyWidget('init', { bot_id: 'YOUR_BOT_ID' });
+  </script>
+  -->
+  <!-- 🔼🔼🔼 PASTE YOUR BOTSIFY SCRIPT ABOVE THIS LINE 🔼🔼🔼 -->
+</head>
+<body>
+  <main class="card">
+    <div class="badge">🐝 MoenBotHive — Chatbot Demo</div>
+    <h1>Welcome to MoenBotHive</h1>
+    <p>This is a lightweight demo page for testing your Botsify chatbot. Paste your Botsify embed script in the
+      <strong>&lt;head&gt;</strong> (see comments in the code) and deploy this single file to any static host.</p>
+
+    <div class="grid">
+      <div class="tile">
+        <h3 style="margin-top:0;">How to use</h3>
+        <ol>
+          <li>Open this file in a text editor.</li>
+          <li>Paste your Botsify embed script between the markers in the <code>&lt;head&gt;</code>.</li>
+          <li>Save, then upload to your hosting (GitHub Pages, Netlify, Vercel, etc.).</li>
+          <li>Reload your site — the chat widget should appear in a corner.</li>
+        </ol>
+      </div>
+      <div class="tile">
+        <h3 style="margin-top:0;">Quick GitHub Pages deploy</h3>
+        <pre><code>1) Create a new GitHub repo (public)
+2) Upload this file as <strong>index.html</strong>
+3) Settings → Pages → Deploy from branch
+4) Branch: <strong>main</strong>, Folder: <strong>/ (root)</strong> → Save
+5) Your site appears at: https://&lt;username&gt;.github.io/&lt;reponame&gt;/</code></pre>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>Need help? Paste your Botsify script here and I’ll verify it.</span>
+      <span>Brand: <strong>MoenBotHive</strong> · Owner: Moen</span>
+    </div>
+  </main>
+</body>
+</html>
